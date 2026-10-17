@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Vinayak Singh, a front-end web development intern.">
+  <meta name="theme-color" content="#2a45e8">
+  <title>Vinayak Singh | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101a2e'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23ffd54a'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- 1. HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Vinayak Singh, back to top">
+        <span class="logo-mark">VS</span>
+        <span class="logo-text">Vinayak Singh</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. HERO / HOME -->
+    <section id="home" class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-role"><span class="status-dot" aria-hidden="true"></span>Open to internships</p>
+          <h1>Hi, I'm Vinayak. I build clear, responsive web pages.</h1>
+          <p class="hero-intro">
+            I'm a computer science student at Sharnbasva University learning HTML and CSS
+            through hands-on projects. I care about readable layouts, accessible colours,
+            and pages that work as well on a phone as on a laptop.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+          <ul class="hero-facts" aria-label="Quick facts">
+            <li><strong>3</strong> projects</li>
+            <li><strong>9</strong> skills</li>
+            <li><strong>100%</strong> responsive</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-file">index.html</span>
+            </div>
+            <pre class="code-body"><code><span class="c-tag">&lt;section</span> <span class="c-attr">id</span>=<span class="c-str">"hello"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>Vinayak Singh<span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>Learning in public.<span class="c-tag">&lt;/p&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span>
+
+<span class="c-sel">.hello</span> {
+  <span class="c-attr">display</span>: <span class="c-str">grid</span>;
+  <span class="c-attr">gap</span>: <span class="c-str">1.5rem</span>;
+}</code></pre>
+          </div>
+          <div class="float-card">
+            <span class="float-label">Currently learning</span>
+            <strong>CSS Grid layouts</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT ME -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <p class="section-lead">A little about who I am and where I'm headed.</p>
+        <div class="about-grid">
+          <article class="about-bio">
+            <h3>Biography</h3>
+            <p>
+              I started coding out of curiosity: I wanted to know how a website goes from a
+              blank file to something people can use. Since then I have built small pages
+              for class assignments and personal practice, and I enjoy turning a rough sketch
+              into a tidy, working layout.
+            </p>
+            <p>
+              Outside of coding, I like reading about design, sketching page layouts on paper,
+              and playing chess.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Education</h3>
+            <p class="about-strong">B.Tech in Computer Science</p>
+            <p>Sharnbasva University</p>
+            <p class="muted">2023 – 2027 (expected)</p>
+          </article>
+
+          <article class="about-card">
+            <h3>Career interests</h3>
+            <ul class="plain-list">
+              <li>Front-end web development</li>
+              <li>UI design and accessibility</li>
+              <li>Building tools that students use</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS -->
+    <section id="skills" class="section section-tint">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-lead">What I use to build and test my pages.</p>
+
+        <div class="skills-layout">
+          <div>
+            <h3>Core skills</h3>
+            <ul class="bars">
+              <li class="bar lvl-90"><span class="bar-name">HTML5</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-pct">90%</span></li>
+              <li class="bar lvl-85"><span class="bar-name">CSS3</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-pct">85%</span></li>
+              <li class="bar lvl-80"><span class="bar-name">Flexbox</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-pct">80%</span></li>
+              <li class="bar lvl-70"><span class="bar-name">CSS Grid</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-pct">70%</span></li>
+              <li class="bar lvl-80"><span class="bar-name">Responsive design</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-pct">80%</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Tools and practices</h3>
+            <ul class="skills-list">
+              <li class="skill">Semantic markup</li>
+              <li class="skill">Git &amp; GitHub</li>
+              <li class="skill">VS Code</li>
+              <li class="skill">Browser DevTools</li>
+              <li class="skill">Accessibility basics</li>
+              <li class="skill">Mobile-first thinking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-lead">Three practice builds, each focused on a different layout skill.</p>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-thumb thumb-one" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Recipe Landing Page</h3>
+            <p>
+              A single-page site for a home-cooking blog with a hero banner, a featured-recipe
+              row, and a newsletter strip. Built to practise typography and spacing.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Flexbox</li>
+            </ul>
+            <a href="https://github.com/your-username/recipe-landing-page" class="card-link">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-two" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h3>Photo Gallery Grid</h3>
+            <p>
+              A responsive gallery that changes from one column on phones to four on wide
+              screens, with hover and keyboard-focus states on every tile.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML5</li>
+              <li>CSS Grid</li>
+              <li>Media queries</li>
+            </ul>
+            <a href="https://github.com/your-username/photo-gallery-grid" class="card-link">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-three" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Student Budget Tracker UI</h3>
+            <p>
+              A static dashboard layout with summary cards and a monthly spending table. It
+              shows how CSS variables keep colours consistent across a larger page.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML5</li>
+              <li>CSS variables</li>
+              <li>CSS Grid</li>
+            </ul>
+            <a href="https://github.com/your-username/budget-tracker-ui" class="card-link">View on GitHub</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section id="contact" class="section section-dark">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p class="section-lead">
+            I'm open to internships and small web projects. Send me a message and I'll reply
+            within two days.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:vinayksingh2515@gmail.com">vinayksingh2515@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/your-username">github.com/your-username</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/your-username">linkedin.com/in/your-username</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Demo form: no server. Submitting opens the visitor's email app. -->
+        <form class="contact-form" action="mailto:vinayksingh2515@gmail.com" method="post" enctype="text/plain">
+          <h3>Send a message</h3>
+          <p class="form-note">Visual demo only. Nothing is stored; sending opens your email app.</p>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="Name" placeholder="Jane Doe" required>
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="Email" placeholder="jane@example.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="4" placeholder="Hello Vinayak..." required></textarea>
+          <button type="submit" class="btn btn-accent">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Vinayak Singh. All rights reserved.</p>
+      <p><a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" aria-label="Back to top">&uarr;</a>
+
+</body>
+</html>
